@@ -1,0 +1,24 @@
+string_encryption v0.1
+================
+
+Ruby on Rails plugin that allows for super simple string encryption.
+
+
+Example
+=======
+Setup:
+	script/plugin install git://github.com/handerson/string_encryption.git
+	
+	script/generate encryption_key
+
+Encryption:
+"Test".encrypt
+	=> "NDFkZTc5NDEyNTg1MzdiZPzBrxZz5aoN%0A"
+
+Decryption
+"NDFkZTc5NDEyNTg1MzdiZPzBrxZz5aoN%0A".decrypt
+	=> "Test"
+
+
+Copyright (c) 2009 Knetwit Inc., released under the MIT license
+Author(s): Heath Anderson
